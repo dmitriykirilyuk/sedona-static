@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <ul>
+            <li class="active">
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="navigation-logo">
+              <img src="img/logo.png" width="138" height="70" alt="Sedona логотип">
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="hotels.html">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="header-welcome">
+          <section class="promo">
+            <div class="promo-welcome">
+              <img src="img/welcome_header.png" width="256" height="86" alt="Приветствие Sedona">
+            </div>
+            <div class="promo-sedona">
+              <img src="img/sedona_header.png" width="458" height="214" alt="Главный промо текст Седона">
+            </div>
+          </section>
+        </div>
+        <div class="main-introduction">
+          <h1>Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+          <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+        </div>
+        <div class="features clearfix">
+          <section class="features-info-first">
+            <h2>Настоящий городок</h2>
+            <div class="features-number">
+              <span>№1</span>
+            </div>
+            <p>Седона не атракцион для туристов, там течёт своя жизнь</p>
+          </section>
+          <div class="features-photo-first">
+            <img src="img/city_view.jpg" width="800" height="256" alt="Вид на Седона">
+          </div>
+        </div>
+        <div class="facilities-row clearfix">
+          <div class="facility-item">
+            <div class="facility-title facility-home">Жилье</div>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="facility-item">
+            <div class="facility-title facility-food">Еда</div>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="facility-item">
+            <div class="facility-title facility-souvenir">Сувениры</div>
+            <p>Не только китайского,<br> но и местного производства!</p>
+          </div>
+        </div>
+        <div class="features clearfix">
+          <div class="features-photo-second">
+            <img src="img/devils_bridge.jpg" width="800" height="256" alt="Мост Дьявола">
+          </div>
+          <section class="features-info-second">
+            <h2>Там есть мост дьявола</h2>
+            <div class="features-number">
+              <span>№2</span>
+            </div>
+            <p>Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
+          </section>
+        </div>
+        <section class="features-row features-second clearfix">
+          <section class="features-info">
+            <h2>Небольшая площадь</h2>
+            <div class="features-number">
+              <span>№3</span>
+            </div>
+            <p>Все достапримечательнсоти находятся очень близко</p>
+          </section>
+          <section class="features-info">
+            <h2>Красивая дорога</h2>
+            <div class="features-number">
+              <span>№4</span>
+            </div>
+            <p>Ехать в седону из Лас-Вегаса совсем не скучно</p>
+          </section>
+          <section class="features-info">
+            <h2>Мало туристов</h2>
+            <div class="features-number">
+              <span>№5</span>
+            </div>
+            <p>Большинство едет в Гранд-Каньон и толпится там</p>
+          </section>
+        </section>
+        <div class="hotel-search">
+          <span>Заинтересовались?</span>
+          <p>Укажите предпологаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="btn search-btn" href="form.html">Поиск гостиницы в Седоне</a>
+          <div class="entrance-form">
+            <form action="/echo" method="post">
+              <fieldset class="input-entrance">
+                <label for="date-in">Дата заезда:</label>
+                <input type="date" id="date-in" class="date" placeholder="24 апреля 2014" name="date-main">
+                <i class="icon-calendar"></i>
+              </fieldset>
+              <fieldset class="input-setoff">
+                <label for="date-out">Дата выезда:</label>
+                <input type="date" id="date-out" class="date" placeholder="4 июля 2014" name="date">
+                <i class="icon-calendar"></i>
+              </fieldset>
+              <fieldset class="input-guests clearfix">
+                <fieldset class="guests-adults">
+                  <label for="adults">Взрослые:</label>
+                  <input type="text" id="adults" class="number" value="2" name="quantity">
+                  <i class="icon-plus"></i>
+                  <i class="icon-minus"></i>
+                </fieldset>
+                <fieldset class="guests-kids">
+                  <label for="kids">Дети:</label>
+                  <input type="text" id="kids" class="number" value="0"  name="quantity">
+                  <i class="icon-plus"></i>
+                  <i class="icon-minus"></i>
+                </fieldset>
+              </fieldset>
+              <input type="submit" class="btn-entrance" value="Найти">
+            </form>
+          </div>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44041.59745778729!2d-111.78297265959688!3d34.871016389643486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ%2C+USA!5e0!3m2!1sen!2s!4v1442337074493" width="1200" height="470" style="border:0" allowfullscreen></iframe>
+        </div>
+      </main>
+      <footer class="main-footer clearfix">
+        <div class="footer-hashtag">
+          #VISITSEDONA
+        </div>
+        <div class="footer-social-buttons">
+          <a class="social-button icon-twitter" href="#"></a>
+          <a class="social-button icon-facebook" href="#"></a>
+          <a class="social-button icon-youtube" href="#"></a>
+        </div>
+        <div class="footer-partners">
+          <div class="footer-academy">Website by</div>
+        </div>
+      </footer>
+  </div>
+  <script src="js/min.js"></script>
+  </body>
+</html>

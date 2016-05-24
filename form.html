@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body class="body-form">
+    <div class="entrance-form">
+      <form action="/echo" method="post">
+        <fieldset class="input-entrance">
+          <label for="date-in">Дата заезда:</label>
+          <input type="date" id="date-in" class="date" value="24 апреля 2014" name="date-main"></input>
+          <i class="icon-calendar"></i>
+        </fieldset>
+        <fieldset class="input-setoff">
+          <label for="date-out">Дата выезда:</label>
+          <input type="date" id="date-out" class="date" value="4 июля 2014" name="date"></input>
+          <i class="icon-calendar"></i>
+        </fieldset>
+        <fieldset class="input-guests clearfix">
+          <fieldset class="guests-adults">
+            <label for="adults">Взрослые:</label>
+            <input type="text" id="adults" class="number" value="2" name="quantity"></input>
+            <i class="icon-plus"></i>
+            <i class="icon-minus"></i>
+          </fieldset>
+          <fieldset class="guests-kids">
+            <label for="kids">Дети:</label>
+            <input type="text" id="kids" class="number" value="0" name="quantity"></input>
+            <i class="icon-plus"></i>
+            <i class="icon-minus"></i>
+          </fieldset>
+        </fieldset>
+        <input type="submit" class="btn-entrance" value="Найти"></input>
+      </form>
+    </div>
+  </body>
+</html>
